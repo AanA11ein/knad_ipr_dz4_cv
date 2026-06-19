@@ -1,0 +1,118 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{tabularx}
+
+\definecolor{primaryColor}{RGB}{15, 23, 42}
+\definecolor{secondaryColor}{RGB}{71, 85, 105}
+\definecolor{accentColor}{RGB}{29, 78, 216}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accentColor,
+    urlcolor=accentColor,
+    pdftitle={Резюме: Юшко Владимир},
+    pdfpagemode=UseNone
+}
+
+\titleformat{\section}{\large\bfseries\color{primaryColor}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\pagestyle{empty}
+
+\setlist[itemize]{
+    itemsep=2pt,
+    topsep=3pt,
+    parsep=0pt,
+    leftmargin=12pt
+}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{26}{30}\selectfont\bfseries\color{primaryColor} Юшко Владимир} \\ \vspace{2pt}
+    {\large \bfseries \color{secondaryColor} Senior Frontend Developer • 6+ лет коммерческого опыта} \\ \vspace{6pt}
+    \small 
+    Москва $\cdot$ 
+    \href{tel:+79283334110}{+7 (928) 333-41-10} $\cdot$ 
+    \href{mailto:vsyushko@yandex.ru}{vsyushko@yandex.ru} $\cdot$ 
+    TG: \href{https://t.me/vsyushko}{@vsyushko} $\cdot$ 
+    Удалённая/гибридная работа 
+\end{center}
+
+\section*{Ключевые навыки}
+\noindent \small
+\textbf{Языки \& Спецификации:} JavaScript (ES6+), TypeScript, HTML5, CSS3, REST API, WebSocket (Socket.IO)  \\
+\textbf{Фреймворки \& Библиотеки:} React, Next.js, Redux, Redux Toolkit (RTK), MobX, Redux-saga, Redux-thunk  \\
+\textbf{Инфраструктура \& Верстка:} Webpack, Vite, Babel, Docker, Git, SSR, Кроссбраузерная и адаптивная верстка 
+
+\section*{Опыт работы}
+
+\noindent \small
+\textbf{Группа компаний «Иннотех»} \hfill Апрель 2024 -- Настоящее время \\
+\textit{Senior Frontend-разработчик (Проект редактирования документов)} \hfill \textit{React, Redux Toolkit, TypeScript} 
+\begin{itemize}
+  \item Оптимизировал древовидную структуру React-компонентов, устранив лишние рендеры сложных объектов и существенно сократив время обновления интерфейса.
+  \item Разработал собственную архитектуру компонентов для работы с документами, основанную на древовидной модели данных и алгоритмах обхода графовых структур.
+  \item Реализовал виртуализацию длинных динамических списков, что позволило обеспечить стабильную работу интерфейса при отображении большого объема данных.
+  \item Участвовал в проектировании архитектурных решений совместно с backend-командой и аналитиками, определяя формат взаимодействия клиентской и серверной частей приложения.
+  \item Проводил анализ производительности React-приложения с использованием React Profiler и Chrome DevTools, устраняя узкие места рендеринга и оптимизируя потребление памяти.
+\end{itemize}
+
+\vspace{8pt}
+\noindent \small
+\textbf{Сбер} \hfill Февраль 2022 -- Март 2024 \\
+\textit{Frontend-разработчик (Экосистема СББОЛ и внутренние системы банка)} \hfill \textit{React, Redux, TypeScript, React Hook Form} 
+\begin{itemize}
+  \item Спроектировал архитектуру и успешно довел до промышленной эксплуатации два крупных внутренних проекта с нуля. 
+  \item Реализовал систему динамического построения пользовательского интерфейса на основе JSON-метаданных, поступающих с backend-сервисов.
+  \item Создал универсальный табличный компонент, поддерживающий сортировку, фильтрацию, пагинацию, виртуализацию и расширяемую систему пользовательских действий.
+  \item Выполнял декомпозицию задач, проводил код-ревью, участвовал в обсуждении архитектуры новых модулей и сопровождал внедрение функциональности в production.
+  \item Наставлял Junior-разработчика, помогая выстроить индивидуальный план развития и вывести его на уровень Middle Frontend Developer.
+\end{itemize}
+
+\vspace{8pt}
+\noindent \small
+\textbf{AMTEX} \hfill Апрель 2020 -- Декабрь 2020 \\
+\textit{Frontend-разработчик (Система администрирования клиентских данных)} \hfill \textit{React, Redux, TypeScript, Antd, REST} 
+\begin{itemize}
+  \item Разработал модуль просмотра, поиска и редактирования клиентских данных.
+  \item Реализовал личный кабинет пользователя и систему управления медиафайлами с поддержкой CRUD-операций.
+  \item Создал набор кастомизированных компонентов на базе Ant Design.
+  \item Принимал участие в проектировании REST API совместно с backend-командой.
+\end{itemize}
+
+\vspace{8pt}
+\noindent \small
+\textbf{BRlab} \hfill Февраль 2019 -- Апрель 2020 \\
+\textit{Frontend-разработчик} \hfill \textit{HTML, CSS, JS, React, Next, Redux, Docker, Antd} 
+\begin{itemize}
+  \item Разработал несколько веб-приложений на React и JavaScript, включая систему мониторинга футбольных прогнозов. 
+  \item Создал библиотеку UI-компонентов на чистом JavaScript.
+  \item Реализовал механизм сохранения пользовательской сессии и миграции данных после авторизации. 
+  \item Настроил процесс сборки проектов и контейнеризацию с использованием Docker. 
+\end{itemize}
+
+\section*{Образование}
+\noindent \small
+\textbf{Кубанский государственный технологический университет, Краснодар} \hfill Выпуск 2018 \\
+\textit{Бакалавриат ФСИУН (Факультет строительства и управления недвижимостью), инженер-строитель} 
+
+\section*{Языки}
+\noindent \small
+\textbf{Русский} — родной \\
+\textbf{Английский} — Intermediate (B1–B2): чтение технической документации, профессиональное общение, участие в созвонах и переписке.
+
+\section*{О себе}
+\noindent \small
+Senior Frontend Developer с более чем шестилетним опытом разработки корпоративных веб-приложений. Специализируюсь на React, TypeScript и проектировании масштабируемых frontend-архитектур. Имею опыт разработки высоконагруженных интерфейсов, оптимизации производительности и создания переиспользуемых UI-компонентов. Интересны задачи, связанные с архитектурой приложений и развитием внутренних frontend-платформ.
+
+\end{document}
